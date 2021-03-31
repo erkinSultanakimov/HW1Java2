@@ -3,6 +3,9 @@ package com.company;
 import java.util.Random;
 
 public final class Sheep extends LKV {
+    public Sheep(){
+        super();
+    }
      public Sheep(String type, String madeIn, int count, Logist company, Purpose purpose){
          super(type,madeIn,count,company,purpose);
      }
@@ -27,6 +30,11 @@ public final class Sheep extends LKV {
                  "\nПроисхождение судны: " + getMadeIn() + "\nТип судна: " + getType() + "\nТип перевозок: " + getPurpose() +
                  "\nАдрес перевозщика: " + getCompany().getAddress() + " \nЛогист компания: " + getCompany().getName() + "\n----------------------------------------";
      }
+
+    public void twin(Sheep sheep, String name){
+         Sheep sheep1 = null;
+        System.out.println(sheep.getType() + ", "  + " Страховочное судно" + "\n " + sheep.getTransportName());
+    }
 
 
 

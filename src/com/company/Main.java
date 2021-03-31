@@ -13,5 +13,10 @@ public class Main {
      sheep.customer("AZA", 312);
         System.out.println(sheep.getInfo());
 
+        Sheep sheep2 = new Sheep();
+        sheep2.twin(sheep, "replica");
+
     }
+
+
 }

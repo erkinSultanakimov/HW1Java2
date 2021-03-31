@@ -5,6 +5,9 @@ public class Transport {
     private String madeIn;
     private int count;
     private  Logist company;
+    public Transport(){
+
+    }
 
 
     public Transport(String type, String madeIn, int count, Logist company) {

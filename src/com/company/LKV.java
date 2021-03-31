@@ -4,7 +4,10 @@ import java.util.Random;
 
 public class LKV extends Transport {
     private Purpose purpose;
+    public LKV(){
+        super();
 
+    }
     public LKV(String type, String madeIn, int count, Logist company, Purpose purpose) {
         super(type, madeIn, count, company);
         this.purpose = purpose;
@@ -41,5 +44,6 @@ public class LKV extends Transport {
     public void customer(int country,String name){
         System.out.println("Имя клиента:" + name + " Код страны клиента: " + country);
     }
+
 
 }
